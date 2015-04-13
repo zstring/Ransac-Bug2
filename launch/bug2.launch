@@ -1,0 +1,6 @@
+<launch>
+    <group ns="robot_0">
+	<node name="stage" pkg="stage_ros" type="stageros" args="$(find lab2)/world/playgroundBug2.world" />
+    </group>
+	<node name="bug2" pkg="lab2" type="bug2.py" />
+</launch>

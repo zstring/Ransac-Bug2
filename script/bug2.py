@@ -23,6 +23,7 @@ front_wall = False
 left_line = False
 on_line = False
 def init():
+    rospy.init_node('bug2', anonymous=True)
     rospy.Subscriber("/robot_0/base_scan", LaserScan, callback)
 
 def callback(data):
